@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  docker-ubuntu-desktop:
+    ports:
+      - "6080:6080"
+    build: .
+    container_name: "guiubuntupy"
+    working_dir: /root/
+    volumes:
+      - ./work:/root/Desktop
